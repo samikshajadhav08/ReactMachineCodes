@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(230, 239, 247);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+}
+.container label {
+  display: block;
+  margin: 10px;
+  text-align: left;
+}
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  color:white;
+  background-color:  rgb(0, 137, 46);
+}
+button:hover {
+  background-color: rgb(3, 172, 59);
+  color: white;
+}
+.error {
+  margin-top: 5px;
+  font-size: 14px;
+  color:red;
+}
+.success {
+  margin-top: 15px;
+  text-align: center;
+  color:green;
+}
