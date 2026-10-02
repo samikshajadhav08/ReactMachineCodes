@@ -1,0 +1,29 @@
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.user-list {
+  display: grid;
+  gap: 15px;
+}
+
+.user-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.error-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-container p {
+  color: red;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
