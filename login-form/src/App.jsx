@@ -66,7 +66,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Login form </h1>
+     <div className="login-card">
+       <h1>Login form </h1>
       <form onSubmit={handleSubmit}>
           <label>Email</label>
           <input
@@ -89,6 +90,7 @@ function App() {
         <button type="submit">Login</button>
       </form>
       {success && <p className="success">{success}</p>}
+     </div>
     </div>
   );
 }

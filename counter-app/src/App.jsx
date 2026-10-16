@@ -4,11 +4,11 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0);
   const increment=()=>{
-    setCount(count+1);
+    setCount(count++);
   }
   const decrement=()=>{
     if(count>0){
-      setCount(count-1);
+      setCount(count--);
     }
   }
   const reset=()=>{
