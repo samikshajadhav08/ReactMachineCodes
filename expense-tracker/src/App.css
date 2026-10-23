@@ -1,0 +1,87 @@
+
+.container {
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.summary {
+  background: #eff6ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.summary h2 {
+  margin: 8px 0;
+}
+
+form,
+section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.expense-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.expense-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.expense-card h3,
+.expense-card p {
+  margin: 4px 0;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .expense-card {
+    flex-wrap: wrap;
+  }
+}
