@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.app p {
+  color: #6b7280;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+.primary-btn {
+  color: white;
+  background: #2563eb;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 15px 40px rgb(0 0 0 / 20%);
+  animation: modal-in 0.2s ease-out;
+}
+
+.modal h2 {
+  margin-top: 8px;
+  color: #111827;
+}
+
+.modal p {
+  line-height: 1.5;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: transparent;
+  font-size: 26px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.cancel-btn {
+  color: #374151;
+  background: #e5e7eb;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: calc(100vw - 40px);
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #166534;
+  color: white;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
+}
+
+.toast button {
+  padding: 0 4px;
+  color: white;
+  background: transparent;
+  font-size: 20px;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
