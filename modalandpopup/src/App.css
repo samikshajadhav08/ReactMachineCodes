@@ -106,7 +106,7 @@ button:focus-visible {
   max-width: calc(100vw - 40px);
   padding: 14px 18px;
   border-radius: 8px;
-  background: #166534;
+  background: #1d8545;
   color: white;
   box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
 }
