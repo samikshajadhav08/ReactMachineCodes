@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.upload-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #1f2937;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.upload-area {
+  padding: 25px 15px;
+  border: 2px dashed #9ca3af;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.upload-area input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.upload-area p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.upload-area small {
+  display: block;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.preview-container {
+  margin-top: 25px;
+}
+
+.preview-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.file-info {
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+
+.file-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.file-size {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.progress-container {
+  margin: 20px 0;
+}
+
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 0.2s ease;
+}
+
+.progress-container p {
+  text-align: right;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background: #dc2626;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.success {
+  color: #15803d;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .upload-card {
+    padding: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
